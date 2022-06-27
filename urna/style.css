@@ -1,0 +1,174 @@
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin: 0;
+}
+
+.urna{
+    background-color: #dbd5c9 ;
+    display: flex;
+    padding: 30px;
+}
+
+.tela{
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 500px;
+}
+
+.teclado{
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+
+.teclado__botao{
+    align-items: center;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 25px;
+    height: 40px;
+    justify-content: center;
+    margin: 10px;
+    width: 70px;
+    box-shadow: 3px 3px 0px #555;  
+}
+
+.teclado__linha{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.botao__branco{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.botao__corrige{
+    background-color: #f09046;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.botao__confirma{
+    background-color: #48c079;
+    color: black;
+    font-size: 15px;    
+    height: 50px;
+    text-transform: uppercase;
+    width: 90px;
+}
+
+/* info da tela */
+
+.d__1{
+    flex: 1;
+    display: flex;
+}
+
+.d__1--left{
+    display: flex;    
+    flex: 1;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.d__1--1{
+    align-items: center;   
+    display: flex;
+    height: 50px;
+}
+
+.d__1--2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.d__1--3{       
+    height: 50px;
+}
+
+.numero{   
+    border: 1px solid #000;
+    display: inline-block;  
+    font-size: 25px; 
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 20px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d__1--4{
+    flex: 1;
+    line-height: 30px;
+}
+
+.d__1--right{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+
+}
+
+.d__1--image{
+    background-color: #FFF;
+    border: 1px solid #000;
+    font-size: 14px;
+    text-align: center;   
+}
+
+.d__1--image img {
+    width: 100%;
+}
+
+.d__1--image.small {
+    font-size: 12px;
+    width: 80%;
+    
+}
+
+.d__2{
+    border-top: 2px solid #000;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.aviso--grande {
+    font-size: 40px ;
+    font-weight: bold;
+}
+
+.aviso--gigante {
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
